@@ -6,22 +6,86 @@
 body{
     margin: 0;
     padding: 0;
-    
     color: white;
     font-family: 'Press star';
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
-.counter{
-    border: 5px solid white;
-    border-radius: 20px;
-    padding: 40px 0;
+.light .navbar i{
+font-size: 30px;
+color: #004d00;
+}
+
+.dark .navbar i{
+    font-size: 30px;
+    color: white;
+    
 }
 
 .light{
     background: linear-gradient(90deg, #ffffcc, #ffffff);   
 }
+.light p{
+    color: #004d00;
+}
+.light .counter{
+    border: 5px solid #004d00;
+    border-radius: 20px;
+    padding: 40px 0;
+}
+.light .btnCounter:hover {
+    box-shadow: 5px 5px 40px rgba(0, 77, 0, 0.9);
+  }
+  
 .dark{
     background: linear-gradient(90deg, #000, #004d00 );
 }
+.dark p{
+    color: white;
+}
+.dark .counter{
+    border: 5px solid white;
+    border-radius: 20px;
+    padding: 40px 0;
+}
+.dark .btnCounter:hover {
+    box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.9);
+  }
+
 .around{
     border-radius: 50%;
 }
+.btnCounter{
+    padding: 30px;
+}
+
+.btn.btn-outline-success{
+    border: none;
+}
+.btnCounter:hover {
+    box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+    border-radius: 20px;
+  }
+
+  footer {
+    margin-top: auto;
+    padding: 20px 0;
+    background-color: #000;
+  }
+  
+  .social{
+    text-align: right;
+  }
+  .social i{
+    color: white;
+    font-size: 30px;
+  }
+  .social a{
+    margin-right: 20px;
+    color: transparent;
+  }
+  .divisore{
+    margin-bottom: 50px;
+  }

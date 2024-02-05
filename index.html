@@ -1,42 +1,81 @@
 <!doctype html>
 <html lang="it">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contatore</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel='stylesheet' href='asset/css/style.css' />
-  </head>
-  <body class="dark">
-    <nav class="navbar">
-        <form class="container-fluid">
-          <button id="light" class="btn btn-outline-success me-2" type="button">Light</button>
-          <button id="dark" class="btn btn-outline-success me-2" type="button">Dark</button>
-        </form>
-      </nav>
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contatore</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel='stylesheet' href='asset/css/style.css' />
+  <link rel="shortcut icon" href="asset/img/favicon.png" type="image/x-icon">
+  <meta property="og:title" content="Contatore">
+  <meta property="og:description" content="Un semplice contatore per aiutarti a non perdere mai il conto">
+  <meta property="og:image" content="assets/img/foto-profilo.png">
+  <meta property="og:url" content="">
+  <meta property="og:type" content="website">
+</head>
 
-      <div class="container">
-        <div class="row text-center">
-          <div class="col-sm-2 bg"></div>
-          <div class="col-sm-8 bg-secondary counter">
-            <p id="result">0</p>
-          </div>
-          <div class="col-sm-2"></div>
+<body class="dark">
+  <nav class="navbar">
+    <form class="container-fluid">
+      <button id="light" class="btn btn-outline-success" type="button"><i class="bi bi-sun-fill"></i></button>
+      <button id="dark" class="btn btn-outline-success" type="button"><i class="bi bi-moon-stars-fill"></i></button>
+    </form>
+  </nav>
+  
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8 counter">
+        <p id="result">0</p>
+      </div>
+      <div class="col-sm-2"></div>
+    </div>
+  </div>
+
+  <div class="divisore"></div>
+
+  <div class="container text-center">
+    <div class="row">
+      <div id="plus" class="col-sm-5 btnCounter">
+        <p>+</p>
+      </div>
+      <div class="col-sm-2"></div>
+      <div id="minus" class="col-sm-5 btnCounter">
+        <p>-</p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <footer class="text-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          &copy; Marco Donati 2024
+        </div>
+        <div class="col-sm-6 social">
+          <a href="https://www.instagram.com/flikfloc/" target="_blank" rel="noopener">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/marco-donati-03a303192/" target="_blank" rel="noopener">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="https://github.com/Marcod93" target="_blank" rel="noopener">
+            <i class="bi bi-github"></i>
+          </a>
         </div>
       </div>
-      <div style="margin-bottom: 50px;"></div>
-
-      <div class="container text-center footer">
-        <div class="row">
-            <div id="plus" class="col-sm-5 bg-primary btnCounter">+</div>
-            <div class="col-sm-2"></div>
-            <div id="minus" class="col-sm-5 bg-secondary btnCounter">-</div>
-          </div>
-        </div>
     </div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="asset/javascript/script.js"></script>
-  </body>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="asset/javascript/script.js"></script>
+</body>
+
 </html>
