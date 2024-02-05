@@ -1,11 +1,27 @@
+@font-face {
+    font-family: 'Press star';
+    src: url(../font/Press_Start_2P/PressStart2P-Regular.ttf);
+}
+
 body{
     margin: 0;
     padding: 0;
-    background: linear-gradient(90deg, #000, #004d00 );
+    
     color: white;
+    font-family: 'Press star';
 }
 .counter{
     border: 5px solid white;
     border-radius: 20px;
     padding: 40px 0;
+}
+
+.light{
+    background: linear-gradient(90deg, #ffffcc, #ffffff);   
+}
+.dark{
+    background: linear-gradient(90deg, #000, #004d00 );
+}
+.around{
+    border-radius: 50%;
 }
