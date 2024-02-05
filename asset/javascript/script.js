@@ -16,31 +16,6 @@ function toggleTheme(theme) {
     });
   });
 
-  
-
-  // function counter(btnCounter){
-  //   let resultString = document.getElementById('result').innerText;
-  //   let resultNumer =  Number(resultString);
-
-  //    if(btnCounter == 'plus')
-  //    {
-  //     document.getElementById('result').innerText = String(++resultNumer)
-  //    }
-  //    else{
-  //       if (Number(resultNumer) == 0)
-  //       return alert("Gia stai a 0!")
-  //       else{
-  //         document.getElementById('result').innerText = String(--resultNumer)
-  //       }
-  //    }
-  // }
-
-  // document.querySelectorAll('.btnCounter').forEach(function(btn) {
-  //   btn.addEventListener('click', function() {
-  //     counter(btn.id);
-  //   });
-  // });
-
   function counter(btnCounter) {
     let resultElement = document.getElementById('result');
     let resultNumber = Number(resultElement.innerText);
