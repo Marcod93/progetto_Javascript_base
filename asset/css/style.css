@@ -1,0 +1,11 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, #000, #004d00 );
+    color: white;
+}
+.counter{
+    border: 5px solid white;
+    border-radius: 20px;
+    padding: 40px 0;
+}
