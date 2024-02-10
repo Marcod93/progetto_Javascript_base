@@ -9,16 +9,12 @@ document.querySelectorAll('.btn').forEach(btn => {
 
 function counter(btnCounter) {
   const resultElement = document.getElementById('result');
-  let resultNumber = Number(resultElement.innerText);
+  let resultNumber = Number(resultElement.value);
 
   if (btnCounter === 'plus') {
-    resultElement.innerText = String(resultNumber + 1);
+    resultElement.value = String(resultNumber + 1);
   } else if (btnCounter === 'minus') {
-    if (resultNumber === 0) {
-      alert("Gia stai a 0!");
-      return;
-    }
-    resultElement.innerText = String(resultNumber - 1);
+    resultElement.value = String(resultNumber - 1);
   }
 }
 
