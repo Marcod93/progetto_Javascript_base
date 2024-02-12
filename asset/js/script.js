@@ -1,23 +1,20 @@
+const plusBtn = document.getElementById('plus');
+const minusBtn = document.getElementById('minus');
+const lightBtn = document.getElementById('light');
+const darkBtn = document.getElementById('dark');
+const resultElement = document.getElementById('result');
+
 function toggleTheme(theme) {
   document.body.classList.remove('dark', 'light');
   document.body.classList.add(theme);
 }
 
-document.querySelectorAll('.btn').forEach(btn => {
-  btn.addEventListener('click', () => toggleTheme(btn.id));
-});
-
-function counter(btnCounter) {
-  const resultElement = document.getElementById('result');
-  let resultNumber = Number(resultElement.value);
-
-  if (btnCounter === 'plus') {
-    resultElement.value = String(resultNumber + 1);
-  } else if (btnCounter === 'minus') {
-    resultElement.value = String(resultNumber - 1);
-  }
+function changeCounter(value) {
+  let valueNumber = Number(resultElement.value);
+  resultElement.value = String(valueNumber + value);
 }
 
-document.querySelectorAll('.btnCounter').forEach(btn => {
-  btn.addEventListener('click', () => counter(btn.id));
-});
+plusBtn.addEventListener('click', () => changeCounter(1));
+minusBtn.addEventListener('click', () => changeCounter(-1));
+lightBtn.addEventListener('click', () => toggleTheme('light'));
+darkBtn.addEventListener('click', () => toggleTheme('dark'));
